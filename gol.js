@@ -2,11 +2,11 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 let globalMap = [];
-const blockSize = 10;
+const blockSize = 5;
 const mapWidth = Math.floor(canvas.width/blockSize), mapHeight = Math.floor(canvas.height/blockSize);
 
 for (let i =0; i < mapWidth * mapHeight; i++) {
-    globalMap.push(getRandomInt(5) == 0);
+    globalMap.push(getRandomInt(2) == 0);
 }
 
 update();
